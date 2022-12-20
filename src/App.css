@@ -2,14 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
-/*#################################
+/* #################################
 #++++++++++++Missions Page++++++++#
 ###################################
 */
 
 button {
   padding: 14px 2px;
-	border: 1px solid grey;
+  border: 1px solid grey;
 }
 
 .mission-list-elements {
@@ -18,12 +18,13 @@ button {
   border: 1px solid grey;
 }
 
-.mission-list-elements:nth-child(odd){
+.mission-list-elements:nth-child(odd) {
   background-color: #f2f2f2;
 }
+
 .mission-heading {
   display: flex;
-  border: 1px solid black
+  border: 1px solid black;
 }
 
 .name-div {
@@ -33,6 +34,7 @@ button {
   text-align: center;
   padding: 2%;
 }
+
 .mission-name {
   font-weight: 600;
 }
@@ -44,27 +46,26 @@ button {
   font-size: 18px;
 }
 
-.mission-div:nth-child(2){
+.mission-div:nth-child(2) {
   flex: 2;
-
 }
-.mission-div:nth-child(1){
+
+.mission-div:nth-child(1) {
   width: 15%;
 }
-.mission-div:nth-child(3){
+
+.mission-div:nth-child(3) {
   width: 25%;
-}
-.mission-description{
-  text-align: justify;
 }
 
 .mission-description {
   border: 1px solid black;
   width: 60%;
   padding: 2%;
+  text-align: justify;
 }
 
-/*Status Section*/
+/* Status Section */
 .mission-status {
   padding: 0 1%;
   flex: 1;
@@ -81,6 +82,7 @@ button {
   font-weight: 500;
   color: white;
 }
+
 .member-btn-yes {
   border-radius: 4px;
   background-color: #33adff;
@@ -96,8 +98,8 @@ button {
 }
 
 .leave-btn {
-  border: 1px solid #ff0000;
+  border: 1px solid #f00;
   border-radius: 4px;
   font-weight: 500;
-  color: #ff0000;
+  color: #f00;
 }
