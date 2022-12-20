@@ -1,22 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 import MissionDescription from './Missions/description';
 
-const baseUrl = 'https://api.spacexdata.com/v3/missions';
+export const baseUrl = 'https://api.spacexdata.com/v3/missions';
 
 const MissionsPage = () => {
-  const [missionData, setMissionData] = useState([]);
-
-  useEffect(() => {
-    fetch(baseUrl)
-      .then((respone) => (respone.json()))
-      .then((data) => (setMissionData(data)));
-  }, [setMissionData]);
+  const data = useSelector((state) => state.mission);
+  console.log(data);
 
   return (
     <section className="mission-section">
       <div className="mission-container">
         <ul className="mission-details">
-          { missionData.map((item) => (
+          { data.map((item) => (
             <MissionDescription
               key={item.mission_id}
               missionName={item.mission_name}
