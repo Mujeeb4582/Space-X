@@ -1,7 +1,7 @@
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Profile from './routes/profile';
-import Missions from './routes/mission';
+import MissionsPage from './routes/mission';
 import './App.css';
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
           <Routes>
             {/* <Route path="/" element={<Rockets />} /> */}
             <Route path="/my-profile" element={<Profile />} />
-            <Route path="/missions" element={<Missions />} />
+            <Route path="/missions" element={<MissionsPage />} />
           </Routes>
         </div>
       </Router>

@@ -3,7 +3,7 @@ import MissionDescription from './Missions/description';
 
 const baseUrl = 'https://api.spacexdata.com/v3/missions';
 
-export const Missions = () => {
+const MissionsPage = () => {
   const [missionData, setMissionData] = useState([]);
 
   useEffect(() => {
@@ -27,4 +27,4 @@ export const Missions = () => {
     </section>
   );
 };
-export default Missions;
+export default MissionsPage;
