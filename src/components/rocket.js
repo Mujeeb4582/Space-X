@@ -1,23 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Rocket = ({ rocket }) => {
-  const { flickerImages, rocketName, description } = rocket;
-  return (
-    <li>
-      <img src={flickerImages} alt="Rocket" />
-      <h2 className="text-3xl font-bold">{ rocketName }</h2>
-      <p>{description}</p>
-      <button type="button" className="bg-blue-400">Resver Rocket</button>
-    </li>
-  );
-};
+const Rocket = ({ rocketName, imgURL, description }) => (
+  <li className="flex h-48 gap-4 mx-12 mb-4">
+    <img className="w-56" src={imgURL} alt={rocketName} />
+    <div>
+      <h2 className="text-2xl font-semibold">{ rocketName }</h2>
+      <p className="my-2 text-justify">{description}</p>
+      <button type="button" className="bg-blue-500 text-white mt-2 py-1 px-2 rounded-sm">Resver Rocket</button>
+    </div>
+  </li>
+);
 Rocket.propTypes = {
-  rocket: PropTypes.shape({
-    rocketName: PropTypes.string.isRequired,
-    flickerImages: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired,
-  }).isRequired,
+  rocketName: PropTypes.string.isRequired,
+  imgURL: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
 };
 
 export default Rocket;
