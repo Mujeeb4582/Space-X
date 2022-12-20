@@ -1,14 +1,17 @@
-/* eslint-disable react/destructuring-assignment */
-/* eslint-disable react/prop-types */
+import PropTypes from 'prop-types';
 import Status from './status';
 
-const MissionDescription = (props) => (
+const MissionDescription = ({ missionName, description }) => (
   <div className="mission-list-elements">
-    <li className="mission-elem">{props.spaceData.mission_name}</li>
-    <li className="mission-elem">{props.spaceData.description}</li>
+    <li className="mission-elem">{missionName}</li>
+    <li className="mission-elem">{description}</li>
     <li className="mission-elem">
       <Status />
     </li>
   </div>
 );
+MissionDescription.propTypes = {
+  missionName: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+};
 export default MissionDescription;

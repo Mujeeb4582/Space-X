@@ -19,7 +19,8 @@ const MissionsPage = () => {
           { missionData.map((item) => (
             <MissionDescription
               key={item.mission_id}
-              spaceData={item}
+              missionName={item.mission_name}
+              description={item.description}
             />
           ))}
         </ul>
