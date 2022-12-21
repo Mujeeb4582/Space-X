@@ -5,19 +5,21 @@ import Rocket from '../components/rocket';
 
 const Rockets = () => {
   const dispatch = useDispatch();
-  const rocketDetails = useSelector((state) => state.rockets.rockets);
+  const rocketDetails = useSelector((state) => state.rockets);
   useEffect(() => {
-    dispatch(getRockets());
-  }, [dispatch]);
+    if (!rocketDetails.length) dispatch(getRockets());
+  }, [dispatch, rocketDetails]);
 
   return (
     <ul>
-      {rocketDetails && rocketDetails.map((rocket) => (
+      {rocketDetails.map((rocket) => (
         <Rocket
           key={rocket.id}
           rocketName={rocket.rocket_name}
           imgURL={rocket.flickr_images[0]}
           description={rocket.description}
+          reserved={!!rocket.reserved}
+          id={rocket.id}
         />
       ))}
     </ul>
