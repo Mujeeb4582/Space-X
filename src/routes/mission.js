@@ -1,27 +1,51 @@
-import React, { useState, useEffect } from 'react';
-import MissionDescription from './Missions/description';
-
-const baseUrl = 'https://api.spacexdata.com/v3/missions';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getMissions } from '../redux/mission/missionReducer';
+import Status from './Missions/status';
+import MissionBadge from './Missions/MissionBadge';
 
 const MissionsPage = () => {
-  const [missionData, setMissionData] = useState([]);
+  const data = useSelector((state) => state.mission);
+  const dispatch = useDispatch();
 
   useEffect(() => {
-    fetch(baseUrl)
-      .then((respone) => (respone.json()))
-      .then((data) => (setMissionData(data)));
-  }, [setMissionData]);
-
+    dispatch(getMissions());
+  }, [dispatch]);
   return (
     <section className="mission-section">
-      <div className="mission-container">
+      <div className="mission-heading">
+        <div className="mission-div">
+          <h2 className="mission-text">Mission</h2>
+        </div>
+        <div className="mission-div">
+          <h2 className="mission-text">Description</h2>
+        </div>
+        <div className="mission-div">
+          <h2 className="mission-text">Status</h2>
+        </div>
+      </div>
+      <div className="space-mission">
         <ul className="mission-details">
-          { missionData.map((item) => (
-            <MissionDescription
-              key={item.mission_id}
-              missionName={item.mission_name}
-              description={item.description}
-            />
+          { data.map((item) => (
+            <li key={item.mission_id} className="mission-list-elements">
+              <div className="name-div">
+                <h2 className="mission-name">{item.mission_name}</h2>
+              </div>
+              <div className="mission-description">
+                <p>{item.description}</p>
+              </div>
+              <div className="mission-status">
+                <Status
+                  key={item.mission_id}
+                  reserved={!!item.reserved}
+                  missionId={item.mission_id}
+                />
+              </div>
+              <div className="mission-status">
+                <MissionBadge reserved={!!item.reserved} className="badge" />
+              </div>
+
+            </li>
           ))}
         </ul>
       </div>
