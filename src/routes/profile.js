@@ -26,15 +26,15 @@ const Profile = () => {
         <h2 className="text-2xl font-semibold pl-2 pb-4">
           My Missions
         </h2>
-        <ul className="flex flex-col">
-          {reservedMissions.map((reserved) => (
+        <ul className="flex flex-col border-t-2 border-gray-500">
+          { reservedMissions.length > 0 ? reservedMissions.map((reserved) => (
             <li
               key={reserved.mission_id}
-              className="flex w-full h-24 text-2xl font-lg text-gray-500 border-2 border-gray-500 items-center justify-center"
+              className="flex h-12 text-lg border-2 border-t-0 border-gray-500 items-center p-4"
             >
               {reserved.mission_name}
             </li>
-          ))}
+          )) : <span className="flex h-24 text-lg border-2 border-t-0 border-gray-500 items-center p-4">You have no reserved missions</span>}
         </ul>
       </section>
     </main>

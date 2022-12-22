@@ -16,13 +16,13 @@ const Status = ({ missionId, reserved }) => {
   if (reserved) {
     return (
       <div className="mission-btn">
-        <button type="button" onClick={handleLeaveMission} className="member-btn-no">NOT A MEMBER</button>
+        <button type="button" onClick={handleLeaveMission} className="member-btn-no">Leave Mission</button>
       </div>
     );
   }
   return (
     <div className="mission-btn">
-      <button type="button" onClick={handleJoinMission} className="member-btn-yes">Active Member</button>
+      <button type="button" onClick={handleJoinMission} className="member-btn-yes">Join Mission</button>
     </div>
   );
 };
