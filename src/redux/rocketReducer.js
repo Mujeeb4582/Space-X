@@ -8,7 +8,7 @@ export const getRockets = createAsyncThunk(
   GET_ROCKETS,
   async () => {
     const response = await fetch(basURL);
-    return response.data;
+    return response.json();
   },
 );
 
