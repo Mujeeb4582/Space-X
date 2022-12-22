@@ -56,17 +56,15 @@ After you're finished please remove all the comments and instructions!
 
 # 📖 Space-X <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+This web application offers space travel services for both commercial and scientific purposes. It allows users to reserve rockets and participate in specific space missions. The application is designed to make it easy for people to access and experience the wonders of space travel."
 
-**[your_project__name]** is a...
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
 <a name="built-with">![HTML](https://img.shields.io/badge/-HTML-orange) <br> ![CSS](https://img.shields.io/badge/-CSS-blue) <br> ![JavaScript](https://img.shields.io/badge/-JavaScript-yellow) <br> ![Webpack](https://img.shields.io/badge/-Webpack-green) <br> ![React.js](https://img.shields.io/badge/-Rect.js-black)</a>
 
 ### Tech Stack <a name="tech-stack"></a>
-
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -76,16 +74,10 @@ After you're finished please remove all the comments and instructions!
 </details>
 
 <details>
-  <summary>Server</summary>
-  <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
-  </ul>
-</details>
-
-<details>
 <summary>Database</summary>
   <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
+    <li><a href="https://api.spacexdata.com/v3/rockets">Rockets API</a></li>
+    <li><a href="https://api.spacexdata.com/v3/missions">Missions API</a></li>
   </ul>
 </details>
 
@@ -93,11 +85,8 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **Single-Page-Application**
+- **Redux**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -105,9 +94,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://space-traval-x.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,13 +102,13 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
-
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
 In order to run this project you need:
+- [Node](https://nodejs.org/en/) installed in your computer
+- [Git](https://git-scm.com/) installed in your computer
 
 <!--
 Example command:
@@ -135,63 +122,42 @@ Example command:
 
 Clone this repository to your desired folder:
 
-<!--
-Example commands:
-
 ```sh
   cd my-folder
-  git clone git@github.com:myaccount/my-project.git
+  git clone https://github.com/Mujeeb4582/Space-X.git
 ```
---->
 
 ### Install
 
 Install this project with:
 
-<!--
-Example command:
-
 ```sh
   cd my-project
-  gem install
+  npm install
 ```
---->
-
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
-
 ```sh
-  rails server
+  npm start
 ```
---->
 
 ### Run tests
 
 To run tests, run the following command:
 
-<!--
-Example command:
-
 ```sh
-  bin/rails test test/models/article_test.rb
+  npm test
 ```
---->
 
 ### Deployment
 
 You can deploy this project using:
 
-<!--
-Example:
-
 ```sh
-
+  npm build
 ```
- -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -201,17 +167,17 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Mujeeb ur Rahman**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Mujeeb4582](https://github.com/Mujeeb4582)
+- Twitter: [@Mujeebu93992980](https://twitter.com/Mujeebu93992980)
+- LinkedIn: [@Mujeeb](https://linkedin.com/in/mujeeb-ur-rahman-54268011a)
 
-👤 **Author2**
+👤 **Kennedy Omondi**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@kennankole](https://github.com/kennankole)
+- Twitter: [@Omandi]( https://twitter.com/KennedyObwombe)
+- LinkedIn: [@Omandi](https://www.linkedin.com/in/kennedyomondi/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -219,11 +185,8 @@ Example:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-> Describe 1 - 3 features you will add to the project.
-
-- [ ] **[new_feature_1]**
-- [ ] **[new_feature_2]**
-- [ ] **[new_feature_3]**
+- [ ] **Mobile version**
+- [ ] **User Personal Account Details**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -233,7 +196,7 @@ Example:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/Mujeeb4582/Space-X/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -251,9 +214,11 @@ If you like this project...
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-> Give credit to everyone who inspired your codebase.
+- Thanks to the Microverse team for the great curriculum.
+- A great thanks to My coding partner.
+- Thanks to the Code Reviewer(s) for the insightful feedback.
+- Hat tip to anyone whose code was used.
 
-I would like to thank...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -261,15 +226,20 @@ I would like to thank...
 
 ## ❓ FAQ <a name="faq"></a>
 
-> Add at least 2 questions new developers would ask when they decide to use your project.
+- **Why use JSX to build UIs?**
 
-- **[Question_1]**
+  - I use it to build my UIs because JSX allows me to utilize HTML syntax while still preserving JavaScript functionalities and its dynamic nature. This means that I can use JavaScript and HTML to design an application, especially more complex ones, because React is better for building single-page apps and static pages. This flexibility doesn't mean programming on HTML, as each JSX syntax is a JavaScript function call. These calls are necessary because web browsers cannot read JSX, so I employ a JavaScript transpiler, such as Babel, to convert these JSX syntaxes into JavaScript function calls.
 
-  - [Answer_1]
+- **What are the components of React?**
 
-- **[Question_2]**
+  - Components are like JavaScript functions that enable a developer to divide a user interface into reusable and independent parts that are isolated pieces they can use in different developments. There are two types of React components. The first are functional components, or stateless components. Their primary function is to return data, which means they accept information and display it in forms. Some programmers may prefer to use functional components because they're easier to understand and require less code.
 
-  - [Answer_2]
+- **Why use React Redux?**
+
+  - The main reason to use React Redux are:
+    - React Redux is the official UI bindings for react Application. It is kept up-to-date with any API changes to ensure that your React components behave as expected.
+    - It encourages good 'React' architecture.
+    - It implements many performance optimizations internally, which allows to components re-render only when it actually needs.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -277,8 +247,6 @@ I would like to thank...
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
+This project is [MIT](https://github.com/Mujeeb4582/Space-X/blob/dev/MIT.md) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
