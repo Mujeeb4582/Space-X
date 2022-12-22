@@ -24,7 +24,6 @@ button {
 
 .mission-heading {
   display: flex;
-  border: 1px solid black;
 }
 
 .name-div {
@@ -42,24 +41,27 @@ button {
 .mission-div {
   padding: 10px;
   border: 1px solid black;
+  border-bottom: none;
   font-weight: 500;
   font-size: 18px;
 }
 
 .mission-div:nth-child(2) {
   flex: 2;
+  border-right: none;
+  border-left: none;
 }
 
 .mission-div:nth-child(1) {
-  width: 15%;
+  width: 15.2%;
 }
 
 .mission-div:nth-child(3) {
-  width: 25%;
+  width: 25.1%;
 }
 
 .mission-description {
-  border: 1px solid black;
+  border-left: 1px solid black;
   width: 60%;
   padding: 2%;
   text-align: justify;
@@ -69,7 +71,7 @@ button {
 .mission-status {
   padding: 0 1%;
   flex: 1;
-  border: 1px solid black;
+  border-left: 1px solid black;
   display: flex;
   align-items: center;
 }
@@ -77,16 +79,15 @@ button {
 /* Button */
 .member-btn-no {
   border-radius: 4px;
-  background-color: #808080;
-  padding: 3px 5px;
+  /* background-color: #808080; */
+  padding: 5px 8px;
   font-weight: 500;
-  color: white;
+  color: red;
+  border: red 1px solid;
 }
 
 .member-btn-yes {
   border-radius: 4px;
-  background-color: #33adff;
-  color: white;
   font-weight: 500;
   padding: 5px 8px;
 }
@@ -95,11 +96,13 @@ button {
   border: 1px solid #808080;
   border-radius: 4px;
   font-weight: 500;
+  padding: 4px;
+  background-color: #06b5ef;
 }
 
 .leave-btn {
-  border: 1px solid #f00;
   border-radius: 4px;
   font-weight: 500;
-  color: #f00;
+  background-color: #c0c0c0;
+  padding: 4px;
 }

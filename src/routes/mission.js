@@ -14,7 +14,7 @@ const MissionsPage = () => {
     }
   }, [dispatch, data]);
   return (
-    <section className="mission-section">
+    <section className="mx-12">
       <div className="mission-heading">
         <div className="mission-div">
           <h2 className="mission-text">Mission</h2>
