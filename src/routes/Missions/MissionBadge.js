@@ -5,13 +5,13 @@ const MissionBadge = (props) => {
   if (reserved) {
     return (
       <div className="mission-btn">
-        <button type="button" className="join-btn">Join Mission</button>
+        <button type="button" className="join-btn">Active Member</button>
       </div>
     );
   }
   return (
     <div className="mission-btn">
-      <button type="button" className="leave-btn">Leave Mission</button>
+      <button type="button" className="leave-btn">NOT A MEMBER</button>
     </div>
   );
 };

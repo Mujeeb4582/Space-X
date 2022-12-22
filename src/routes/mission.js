@@ -37,16 +37,15 @@ const MissionsPage = () => {
                 <p>{item.description}</p>
               </div>
               <div className="mission-status">
+                <MissionBadge reserved={!!item.reserved} className="badge" />
+              </div>
+              <div className="mission-status">
                 <Status
                   key={item.mission_id}
                   reserved={!!item.reserved}
                   missionId={item.mission_id}
                 />
               </div>
-              <div className="mission-status">
-                <MissionBadge reserved={!!item.reserved} className="badge" />
-              </div>
-
             </li>
           ))}
         </ul>
