@@ -1,0 +1,87 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Navbar component should renders Navbar component 1`] = `
+<header
+  className="md:h-16 flex flex-col md:flex-row justify-between items-center my-6 mx-12 border-b-2 border-black pb-4"
+>
+  <a
+    aria-current="page"
+    className="h-full flex flex-row justify-between items-center mb-4 active"
+    href="/"
+    onClick={[Function]}
+  >
+    <img
+      alt="logo"
+      className="h-10 mr-4 lg:h-14"
+      src="logo.png"
+    />
+    <span
+      className="text-2xl md:text-3xl"
+    >
+      Space Travelers' Hub
+    </span>
+  </a>
+  <nav
+    className="flex gap-3 items-center"
+  >
+    <a
+      aria-current="page"
+      className="active"
+      href="/"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#2088ff",
+          "fontWeight": 600,
+          "textDecoration": "underline",
+        }
+      }
+    >
+      <span
+        className=""
+      >
+        Rockets
+      </span>
+    </a>
+    <a
+      className=""
+      href="/missions"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#2088ff",
+          "fontWeight": 600,
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        className=""
+      >
+        Missions
+      </span>
+    </a>
+    <div
+      className="h-4 border-r-2 border-black"
+    />
+    <a
+      className=""
+      href="/my-profile"
+      onClick={[Function]}
+      style={
+        Object {
+          "color": "#2088ff",
+          "fontWeight": 600,
+          "textDecoration": "none",
+        }
+      }
+    >
+      <span
+        className=""
+      >
+        My Profile
+      </span>
+    </a>
+  </nav>
+</header>
+`;
