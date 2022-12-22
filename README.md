@@ -94,9 +94,7 @@ This web application offers space travel services for both commercial and scient
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Add a link to your deployed project.
-
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+- [Live Demo Link](https://space-traval-x.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
