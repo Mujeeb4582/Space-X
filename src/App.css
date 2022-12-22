@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* #################################
+#++++++++++++Missions Page++++++++#
+###################################
+*/
+
+button {
+  padding: 14px 2px;
+  border: 1px solid grey;
+}
+
+.mission-list-elements {
+  display: flex;
+  justify-content: center;
+  border: 1px solid grey;
+}
+
+.mission-list-elements:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.mission-heading {
+  display: flex;
+}
+
+.name-div {
+  display: flex;
+  align-items: center;
+  width: 15%;
+  text-align: center;
+  padding: 2%;
+}
+
+.mission-name {
+  font-weight: 600;
+}
+
+.mission-div {
+  padding: 10px;
+  border: 1px solid black;
+  border-bottom: none;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.mission-div:nth-child(2) {
+  flex: 2;
+  border-right: none;
+  border-left: none;
+}
+
+.mission-div:nth-child(1) {
+  width: 15.2%;
+}
+
+.mission-div:nth-child(3) {
+  width: 25.1%;
+}
+
+.mission-description {
+  border-left: 1px solid black;
+  width: 60%;
+  padding: 2%;
+  text-align: justify;
+}
+
+/* Status Section */
+.mission-status {
+  padding: 0 1%;
+  flex: 1;
+  border-left: 1px solid black;
+  display: flex;
+  align-items: center;
+}
+
+/* Button */
+.member-btn-no {
+  border-radius: 4px;
+  padding: 5px 8px;
+  font-weight: 500;
+  color: red;
+  border: red 1px solid;
+}
+
+.member-btn-yes {
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 5px 8px;
+}
+
+.join-btn {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  font-weight: 500;
+  padding: 4px;
+  background-color: #06b5ef;
+}
+
+.leave-btn {
+  border-radius: 4px;
+  font-weight: 500;
+  background-color: #c0c0c0;
+  padding: 4px;
+}
