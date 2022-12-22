@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <section
-        class="mission-section"
+        class="mx-12"
       >
         <div
           class="mission-heading"
@@ -51,7 +51,7 @@ Object {
   </body>,
   "container": <div>
     <section
-      class="mission-section"
+      class="mx-12"
     >
       <div
         class="mission-heading"

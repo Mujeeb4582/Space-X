@@ -31,8 +31,14 @@ exports[`Test Profile component should renders Profile component 1`] = `
       My Missions
     </h2>
     <ul
-      className="flex flex-col"
-    />
+      className="flex flex-col border-t-2 border-gray-500"
+    >
+      <span
+        className="flex h-24 text-lg border-2 border-t-0 border-gray-500 items-center p-4"
+      >
+        You have no reserved missions
+      </span>
+    </ul>
   </section>
 </main>
 `;
